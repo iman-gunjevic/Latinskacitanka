@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+nav {
+    width: 976px;
+    height: 64px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 64px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0px 12px 0px 10px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: #aaaaaa;
+}
+
+/*MAIN*/
+
+.main {
+    width: 964px;
+    height: 700px;
+    padding: 30px;
+    /*
+    background-color: lightblue;
+    */
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+}
+
+/*ASIDE*/
+
+.about {
+    height: auto;
+    padding: 20px;
+    color: #333333;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.profile { 
+    width: 70%;
+    margin: 28px auto 28px auto;
+    display: block;
+    border-radius: 500px;
+    border: 1px solid black;
+}
+
+/*CONTENT*/
+
+.content{
+    width: 714px;
+}
+
+.post {
+    height: 180px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-gap: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.blog-image {
+    display: block;
+    height: 180px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
+
+.more {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.wideview{
+    display: contents;
+}
+
+.narrowview {
+    display: none;
+}
+
+/*ARTICLE - OPEN SEND SITE*/
+
+.article {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-gap: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.article-image {
+    display: block;
+    height: 360px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
+
+.song {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    grid-gap: 10px;
+    font-size:12px; 
+    line-height:20px; 
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.line {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+tr{
+    font-size: 12px;
+}
+
+.second-row {
+    background-color: rgb(226, 226, 226);
+}
+
+/*FOOTER*/
+/*
+footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 20px; 
+   text-align: center;  
+   background-color: #ffffff;
+   line-height: 20px;
+   font-size: 12px;
+}
+*/
+/*MOBILE VIEW*/
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .main {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin: 0 auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    .content{
+        width: auto;
+
+    }
+
+    .post {
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: auto 2fr;
+        grid-gap: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #ffffff;
+    }
+
+    .wideview {
+        display: none;
+    }
+
+    .narrowview {
+        display: contents;
+    }
+
+    .hiding {
+        display: none;
+    }
+
+    .more {
+        display: none;
+    }
+    
+    .blog-image {
+        display: block;
+        height: 100px;
+        background-color: whitesmoke;
+        border-radius: 3px;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity 200ms ease;
+        transition: opacity 200ms ease;
+    }
+
+    .article-image{
+        height: 100%;
+        width: 100%;
+    }
+
+    .song {
+        font-size: 12px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        line-height:20px; 
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+
+    .line {
+        display: contents;
+    }
+
+    td {
+        padding: 0px 5px 0px 5px;
+    }
+
+    
+}
+
+   
+
+
+
+
+
+
