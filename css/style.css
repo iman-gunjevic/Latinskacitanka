@@ -251,7 +251,7 @@ footer {
     .blog-image {
         display: block;
         height: 100px;
-        background-color: whitesmoke;
+        background-color: white;
         border-radius: 3px;
         background-position: 50% 50%;
         background-size: cover;
